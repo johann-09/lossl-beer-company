@@ -18,13 +18,26 @@ a{
     font-family: v.$fuente-titulo;
     font-size: 25px;
     font-weight: 600;
+    margin: 0 16px;
     color: #d5a432;
+
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: #b58910;
+    }
 }
 
 .link-nav{
     font-size: 20px;
     font-weight: 500;
     font-family: v.$fuente-texto;
-    color: #F3E9D2;
+    color: v.$color-blanco;
     margin: 0 16px;
+
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: #bf8e0a;
+    }
 }
