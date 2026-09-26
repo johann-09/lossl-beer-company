@@ -1,0 +1,18 @@
+@use "../utilities/variables" as v;
+
+.boton{
+    color: #212121;
+    background-color: #e2ae1e;
+    padding: 20px;
+    font-size: 18px;
+    font-family: v.$fuente-texto;
+    font-weight: 600;
+    border-radius: 10px;
+
+    transition: all 0.3s linear;
+
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 2px 5px #b28b1e;
+    }
+}

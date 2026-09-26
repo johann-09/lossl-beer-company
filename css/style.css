@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lexend:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.boton {
+  color: #212121;
+  background-color: #e2ae1e;
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.boton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 5px #b28b1e;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1C140B;
+  padding: 20px 26px;
+  border-bottom: 3px solid #ba860d;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-logo {
+  font-family: "Fraunces", serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #d5a432;
+}
+
+.link-nav {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Lexend", sans-serif;
+  color: #F3E9D2;
+  margin: 0 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5529411765), rgba(0, 0, 0, 0.5529411765)), url(../assets/paisaje-hero.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tit-frase {
+  margin-bottom: 19px;
+}
+
+.titulo-hero {
+  font-family: "Fraunces", serif;
+  font-size: 9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.frase-hero {
+  color: #d3d2d2;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

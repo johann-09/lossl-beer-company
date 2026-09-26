@@ -1,0 +1,30 @@
+@use "../utilities/variables" as v;
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C140B;
+    padding: 20px 26px;
+    border-bottom: 3px solid #ba860d;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar-logo{
+    font-family: v.$fuente-titulo;
+    font-size: 25px;
+    font-weight: 600;
+    color: #d5a432;
+}
+
+.link-nav{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: v.$fuente-texto;
+    color: #F3E9D2;
+    margin: 0 16px;
+}
