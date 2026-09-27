@@ -1,0 +1,98 @@
+@use "../utilities/variables" as v;
+
+
+footer{
+    background-color: #1C140B;
+    padding: 2.5rem;
+    border-top: 4px solid v.$color-dorado;
+}
+
+.footer-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+    gap: 3rem;
+    border-bottom: 2px solid #503a22;
+}
+
+footer p{
+    color: v.$color-blanco;
+    font-family: v.$fuente-texto;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.nombre-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tit-footer{
+    color: v.$color-blanco;
+    font-family: v.$fuente-titulo;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.nombre-footer p{
+    color: v.$color-gris;
+    font-family: v.$fuente-texto;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.color-amarillo{
+    color: v.$color-dorado;
+}
+
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-footer{
+    color: v.$color-blanco;
+    font-family: v.$fuente-texto;
+    font-size: 19px;
+    font-weight: 500;
+
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: #bf8e0a;
+    }
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.redsocial{
+    color: v.$color-blanco;
+    font-family: v.$fuente-texto;
+    font-size: 19px;
+    font-weight: 500;
+
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: #bf8e0a;
+    }
+}
+

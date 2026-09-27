@@ -68,12 +68,17 @@ a {
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6196078431)), url(../assets/paisaje-hero.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   gap: 2rem;
+}
+
+.logo {
+  width: 210px;
+  height: 180px;
 }
 
 .tit-frase {
@@ -82,7 +87,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .titulo-hero {
@@ -124,6 +129,8 @@ a {
 .historia-seccion {
   background-color: #F3E9D2;
   border-top: 4px solid #efce80;
+  width: 100%;
+  height: 80vh;
 }
 
 .hist-contenedor {
@@ -150,6 +157,99 @@ a {
   font-family: "Lexend", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
+  margin: 0 auto;
+  width: 70%;
+}
+
+footer {
+  background-color: #1C140B;
+  padding: 2.5rem;
+  border-top: 4px solid #e2ae1e;
+}
+
+.footer-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
+  gap: 3rem;
+  border-bottom: 2px solid #503a22;
+}
+
+footer p {
+  color: #F3E9D2;
+  font-family: "Lexend", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.nombre-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tit-footer {
+  color: #F3E9D2;
+  font-family: "Fraunces", serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.nombre-footer p {
+  color: #d3d2d2;
+  font-family: "Lexend", sans-serif;
+  font-style: oblique;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.color-amarillo {
+  color: #e2ae1e;
+}
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-footer {
+  color: #F3E9D2;
+  font-family: "Lexend", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+.link-footer:hover {
+  color: #bf8e0a;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.redsocial {
+  color: #F3E9D2;
+  font-family: "Lexend", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+.redsocial:hover {
+  color: #bf8e0a;
 }
 
 /*# sourceMappingURL=style.css.map */
