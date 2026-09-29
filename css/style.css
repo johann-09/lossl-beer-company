@@ -161,6 +161,74 @@ a {
   width: 70%;
 }
 
+.variedades-seccion {
+  background-color: #241A0D;
+  width: 100%;
+  border-top: 3px solid #e2ae1e;
+}
+
+.tit-variedades {
+  color: #e2ae1e;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.variedades-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.signo {
+  color: #e2ae1e;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cerveza-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.desc-cerveza-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cerveza-img {
+  width: 500px;
+  height: 470px;
+  border: 4px solid #e2ae1e;
+  border-radius: 15px;
+  transition: all 0.3s linear;
+}
+.cerveza-img:hover {
+  transform: translateY(-7px);
+}
+
+.tit-cerv {
+  color: #bf8e0a;
+  font-family: "Fraunces", serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.desc-cerv {
+  font-family: "Lexend", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: #F3E9D2;
+  max-width: 46ch;
+}
+
 footer {
   background-color: #1C140B;
   padding: 2.5rem;

@@ -1,0 +1,75 @@
+@use "../utilities/variables" as v;
+
+.variedades-seccion{
+    background-color: #241A0D;
+    width: 100%;
+    border-top: 3px solid v.$color-dorado;
+}
+
+.tit-variedades{
+    color: v.$color-dorado;
+    font-family: v.$fuente-especial;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.variedades-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signo{
+    color: v.$color-dorado;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cerveza-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.desc-cerveza-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cerveza-img{
+    width: 500px;
+    height: 470px;
+    border: 4px solid v.$color-dorado;
+    border-radius: 15px;
+
+    transition: all 0.3s linear;
+
+    &:hover{
+        transform: translateY(-7px);
+    }
+}
+
+.tit-cerv{
+    color: v.$dorado-oscuro;
+    font-family: v.$fuente-titulo;
+    font-size: 45px;
+    font-weight: 700;
+    // text-align: center;
+}
+
+.desc-cerv{
+    font-family: v.$fuente-texto;
+    font-size: 23px;
+    font-weight: 500;
+    color: v.$color-blanco;
+    // width: 70%;
+    // margin: 0 auto;
+    max-width: 46ch;
+}
+

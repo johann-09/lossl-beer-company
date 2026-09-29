@@ -10,6 +10,8 @@
     <title>Doldán Lössl - Cerveza</title>
     <!-- CSS COMPILADO -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- ANIMACIONES -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +58,48 @@
                     la esencia de la Patagonia argentina.</p>
             </div>
         </section>
-        <section id="variedades" class="variedades-seccion">...</section>
+
+        <section id="variedades" class="variedades-seccion">
+            <h2 class="tit-variedades">Nuestras Variedades</h2>
+            <div class="variedades-contenedor">
+                <div class="cerveza-item" data-aos="fade-right">
+                    <div class="desc-cerveza-cont">
+                        <h2 class="tit-cerv">Stout</h2>
+                        <p class="desc-cerv">La Cream Stout es una versión suave y cremosa de las clásicas Stout
+                            británicas.De color negro intenso, destaca por sus notas de café, cacao y chocolate.De
+                            cuerpo sedoso, combina un dulzor sutil con un tostado equilibrado.Una Stout elegante,
+                            intensa y muy fácil de disfrutar.</p>
+                    </div>
+                    <img src="assets/stout-cerv.webp" alt="Cerveza Stout" class="cerveza-img">
+                </div>
+                <p class="signo">✦</p>
+                <div class="cerveza-item" data-aos="fade-left">
+                    <img src="assets/ipa-argenta-cerv.webp" alt="Cerveza Ipa Argenta" class="cerveza-img">
+                    <div class="desc-cerveza-cont">
+                        <h2 class="tit-cerv">Ipa Argenta</h2>
+                        <p class="desc-cerv">Nacida en Argentina como el primer estilo autóctono reconocido por la BJCP,
+                            esta cerveza rinde homenaje a los lúpulos locales. De color dorado a ámbar claro, destaca
+                            por un perfil marcadamente frutal y resinoso con notas a frutas de carozo y cítricos. En
+                            boca ofrece un amargor firme pero equilibrado por la malta, logrando un cuerpo medio y gran
+                            tomabilidad.</p>
+                    </div>
+                </div>
+                <p class="signo">✦</p>
+                <div class="cerveza-item" data-aos="fade-right">
+                    <div class="desc-cerveza-cont">
+                        <h2 class="tit-cerv">Kölsh</h2>
+                        <p class="desc-cerv">La Kölsch es una cerveza originaria de Colonia, Alemania, nacida como
+                            respuesta a la tradición cervecera de la región.
+                            De color dorado brillante, es ligera, limpia y delicadamente afrutada.
+                            Combina la suavidad de una lager con la expresión aromática de una ale.
+                            Su final es seco, refrescante y de amargor sutil, ideal para beberla bien fría.</p>
+                    </div>
+                    <img src="assets/kolsh-cerv.webp" alt="Cerveza Kölsh" class="cerveza-img">
+                </div>
+
+            </div>
+        </section>
+
         <section id="galeria" class="galeria-seccion">...</section>
         <section id="contacto" class="contacto-seccion">...</section>
     </main>
@@ -84,7 +127,10 @@
         </div>
         <p>© 2026 Doldán Lössl — cerveza artesanal casera.</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
