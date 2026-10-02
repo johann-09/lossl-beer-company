@@ -38,6 +38,7 @@ header {
   padding: 20px 0;
   border-bottom: 3px solid #ba860d;
   width: 100%;
+  min-width: 0;
 }
 
 a {
@@ -74,12 +75,13 @@ a {
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6196078431)), url(../assets/portada-hero.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   gap: 2rem;
+  min-width: 0;
+  padding: 4rem 0;
 }
 
 .logo {
@@ -94,6 +96,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+  min-width: 0;
 }
 
 .titulo-hero {
@@ -115,6 +118,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  min-width: 0;
 }
 
 .stat {
@@ -125,6 +129,7 @@ a {
   color: #cdcccc;
   border: 3px solid #dad8d8;
   border-radius: 35px;
+  margin-bottom: 1rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4235294118), rgba(0, 0, 0, 0.4039215686));
   transition: all 0.2s linear;
 }
@@ -136,6 +141,7 @@ a {
   background-color: #F3E9D2;
   border-top: 4px solid #efce80;
   width: 100%;
+  overflow-x: clip;
 }
 
 .hist-contenedor {
@@ -174,6 +180,8 @@ a {
   justify-content: center;
   gap: 4rem;
   padding: 2rem 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .img-his {
@@ -194,12 +202,14 @@ a {
   border-top: 3px solid #e2ae1e;
 }
 
-.tit-variedades {
+.tit-secciones {
   color: #e2ae1e;
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
   text-align: center;
+  width: 37%;
   margin: 2rem auto;
+  border-bottom: 3px solid #e2ae1e;
 }
 
 .variedades-contenedor {
@@ -256,6 +266,11 @@ a {
   max-width: 46ch;
 }
 
+.cerveza-item[data-aos],
+.imagenes-historia[data-aos] {
+  transform: none !important;
+}
+
 .galeria-seccion {
   width: 100%;
   height: 100vh;
@@ -275,16 +290,12 @@ a {
   justify-content: center;
   gap: 3rem;
   min-width: 0;
-  border-top: 3px solid #e2ae1e;
-  max-width: 40%;
-  margin: 0 auto;
 }
 
 .marquee {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  animation-duration: 25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -301,11 +312,17 @@ a {
 }
 
 .marquee-arriba {
+  animation-duration: 25s;
   animation-name: subir;
 }
 
 .marquee-abajo {
   animation-name: bajar;
+  animation-duration: 30s;
+}
+
+.tercera-columna {
+  animation-duration: 15s;
 }
 
 @keyframes subir {
@@ -433,6 +450,227 @@ footer p {
 
 .icon-gm {
   background-color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .navbar-logo {
+    font-size: 26px;
+  }
+  .link-nav {
+    font-size: 19px;
+  }
+  .tit-frase {
+    margin-bottom: 10px;
+  }
+  .hero {
+    padding: 3rem 0;
+  }
+  .logo {
+    width: 140px;
+    height: 130px;
+  }
+  .titulo-hero {
+    font-size: 4.5rem;
+  }
+  .frase-hero {
+    font-size: 19px;
+  }
+  .boton {
+    font-size: 19px;
+    padding: 14px 25px;
+  }
+  .caracteristicas {
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .stat {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .tit-hist {
+    font-size: 3rem;
+  }
+  .frase-hist {
+    font-size: 2rem;
+  }
+  .parrafo {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .imagenes-historia {
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  .img-his {
+    width: 210px;
+    height: 260px;
+  }
+  .tit-secciones {
+    font-size: 3rem;
+  }
+  .cerveza-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .cerveza-img {
+    width: 320px;
+    height: 300px;
+  }
+  .desc-cerv {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .tit-cerv {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .marquee-cont {
+    gap: 1.7rem;
+  }
+  .cerv-img {
+    width: 140px;
+    height: 190px;
+  }
+  .img-estirada {
+    height: 220px;
+  }
+  .footer-contenedor {
+    gap: 2rem;
+  }
+  .tit-footer {
+    font-size: 2rem;
+  }
+  .nombre-footer p {
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+  .nombre-footer {
+    gap: 5px;
+  }
+  .link-footer {
+    font-size: 1.2rem;
+  }
+  .redes-footer {
+    gap: 1rem;
+  }
+  .redsocial {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+  .link-nav {
+    font-size: 13px;
+  }
+  .tit-frase {
+    margin-bottom: 8px;
+  }
+  .hero {
+    padding: 2rem 0;
+  }
+  .logo {
+    width: 110px;
+    height: 100px;
+  }
+  .titulo-hero {
+    font-size: 3.5rem;
+  }
+  .frase-hero {
+    font-size: 13px;
+  }
+  .boton {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  .caracteristicas {
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  .stat {
+    font-size: 12px;
+    padding: 7px;
+  }
+  .tit-hist {
+    font-size: 2.5rem;
+  }
+  .frase-hist {
+    font-size: 1.5rem;
+  }
+  .parrafo {
+    font-size: 0.8rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .imagenes-historia {
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  .img-his {
+    width: 150px;
+    height: 200px;
+  }
+  .tit-secciones {
+    font-size: 2rem;
+  }
+  .cerveza-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cerveza-img {
+    width: 300px;
+    height: 280px;
+  }
+  .desc-cerv {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .tit-cerv {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .marquee-cont {
+    gap: 1.3rem;
+    border-top: 3px solid #e2ae1e;
+    border-bottom: 3px solid #e2ae1e;
+    height: 610px;
+  }
+  .cerv-img {
+    width: 120px;
+    height: 170px;
+  }
+  .img-estirada {
+    height: 220px;
+  }
+  .footer-contenedor {
+    gap: 1.5rem;
+  }
+  .tit-footer {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .nombre-footer p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .nombre-footer {
+    gap: 5px;
+  }
+  .link-footer {
+    font-size: 0.9rem;
+  }
+  .redes-footer {
+    gap: 1rem;
+  }
+  .redsocial {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

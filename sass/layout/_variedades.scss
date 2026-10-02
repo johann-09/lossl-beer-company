@@ -1,32 +1,34 @@
 @use "../utilities/variables" as v;
 
-.variedades-seccion{
+.variedades-seccion {
     background-color: #241A0D;
     width: 100%;
     border-top: 3px solid v.$color-dorado;
 }
 
-.tit-variedades{
+.tit-secciones {
     color: v.$color-dorado;
     font-family: v.$fuente-especial;
     font-size: 4rem;
     text-align: center;
+    width: 37%;
     margin: 2rem auto;
+    border-bottom: 3px solid v.$color-dorado;
 }
 
-.variedades-contenedor{
+.variedades-contenedor {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.signo{
+.signo {
     color: v.$color-dorado;
     font-size: 30px;
     text-align: center;
 }
 
-.cerveza-item{
+.cerveza-item {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -35,14 +37,14 @@
     gap: 2rem;
 }
 
-.desc-cerveza-cont{
+.desc-cerveza-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
 
-.cerveza-img{
+.cerveza-img {
     width: 500px;
     height: 470px;
     border: 4px solid v.$color-dorado;
@@ -50,19 +52,19 @@
 
     transition: all 0.3s linear;
 
-    &:hover{
+    &:hover {
         transform: translateY(-7px);
     }
 }
 
-.tit-cerv{
+.tit-cerv {
     color: v.$dorado-oscuro;
     font-family: v.$fuente-titulo;
     font-size: 45px;
     font-weight: 700;
 }
 
-.desc-cerv{
+.desc-cerv {
     font-family: v.$fuente-texto;
     font-size: 23px;
     font-weight: 500;
@@ -70,3 +72,9 @@
     max-width: 46ch;
 }
 
+.cerveza-item,
+.imagenes-historia {
+    &[data-aos] {
+        transform: none !important;
+    }
+}

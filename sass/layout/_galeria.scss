@@ -20,16 +20,12 @@
     justify-content: center;
     gap: 3rem;
     min-width: 0;
-    border-top: 3px solid v.$color-dorado;
-    max-width: 40%;
-    margin: 0 auto;
 }
 
 .marquee{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    animation-duration: 25s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -46,11 +42,17 @@
 }
 
 .marquee-arriba{
+    animation-duration: 25s;
     animation-name: subir;
 }
 
 .marquee-abajo{
     animation-name: bajar;
+    animation-duration: 30s;
+}
+
+.tercera-columna{
+    animation-duration: 15s;
 }
 
 @keyframes subir{
