@@ -31,7 +31,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
     gap: 2rem;
 }
 
@@ -60,7 +60,6 @@
     font-family: v.$fuente-titulo;
     font-size: 45px;
     font-weight: 700;
-    // text-align: center;
 }
 
 .desc-cerv{
@@ -68,8 +67,6 @@
     font-size: 23px;
     font-weight: 500;
     color: v.$color-blanco;
-    // width: 70%;
-    // margin: 0 auto;
     max-width: 46ch;
 }
 

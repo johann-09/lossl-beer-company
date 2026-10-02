@@ -3,8 +3,9 @@
 
 footer{
     background-color: #1C140B;
-    padding: 2.5rem;
+    padding: 2rem 0;
     border-top: 4px solid v.$color-dorado;
+    width: 100%;
 }
 
 .footer-contenedor{
@@ -88,11 +89,27 @@ footer p{
     font-family: v.$fuente-texto;
     font-size: 19px;
     font-weight: 500;
-
-    transition: all 0.3s linear;
-
-    &:hover{
-        color: #bf8e0a;
-    }
 }
 
+.caja-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+.icon{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.icon-ws{
+    background-color: #24ca24;
+}
+
+.icon-gm{
+    background-color: #ffffff;
+}

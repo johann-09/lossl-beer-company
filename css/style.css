@@ -8,6 +8,11 @@ body {
   background-color: #c6c6c6;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .boton {
   color: #212121;
   background-color: #e2ae1e;
@@ -30,8 +35,9 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #1C140B;
-  padding: 20px 26px;
+  padding: 20px 0;
   border-bottom: 3px solid #ba860d;
+  width: 100%;
 }
 
 a {
@@ -130,7 +136,6 @@ a {
   background-color: #F3E9D2;
   border-top: 4px solid #efce80;
   width: 100%;
-  height: 80vh;
 }
 
 .hist-contenedor {
@@ -140,25 +145,47 @@ a {
 .tit-hist {
   color: #bf8e0a;
   font-family: "Fraunces", serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
   margin: 2.5rem 0;
 }
 
 .frase-hist {
+  color: #000000;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: oblique;
   font-weight: 600;
-  margin-bottom: 2rem;
+  width: 80%;
+  margin: 2rem auto;
 }
 
 .parrafo {
   font-family: "Lexend", sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
-  margin: 0 auto;
-  width: 70%;
+  font-weight: 400;
+  margin: 1rem auto;
+  max-width: 75ch;
+}
+
+.imagenes-historia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+.img-his {
+  width: 390px;
+  height: 450px;
+  border-radius: 17px;
+  border: 4px solid #e2ae1e;
+  transition: all 0.2s linear;
+}
+.img-his:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 3px 8px #191919;
 }
 
 .variedades-seccion {
@@ -192,7 +219,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   gap: 2rem;
 }
 
@@ -229,10 +256,75 @@ a {
   max-width: 46ch;
 }
 
+.galeria-seccion {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6196078431)), url(../assets/paisaje-galeria.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  border-top: 3px solid #e2ae1e;
+}
+
+.marquee-cont {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  min-width: 0;
+  border-top: 3px solid #e2ae1e;
+  max-width: 35%;
+  margin: 0 auto;
+}
+
+.marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cerv-img {
+  width: 210px;
+  height: 270px;
+  border: 4px solid #e2ae1e;
+  border-radius: 15px;
+}
+
+.marquee-arriba {
+  animation-name: subir;
+}
+
+.marquee-abajo {
+  animation-name: bajar;
+}
+
+@keyframes subir {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes bajar {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 footer {
   background-color: #1C140B;
-  padding: 2.5rem;
+  padding: 2rem 0;
   border-top: 4px solid #e2ae1e;
+  width: 100%;
 }
 
 .footer-contenedor {
@@ -314,10 +406,29 @@ footer p {
   font-family: "Lexend", sans-serif;
   font-size: 19px;
   font-weight: 500;
-  transition: all 0.3s linear;
 }
-.redsocial:hover {
-  color: #bf8e0a;
+
+.caja-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+}
+
+.icon {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.icon-ws {
+  background-color: #24ca24;
+}
+
+.icon-gm {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

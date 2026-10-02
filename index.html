@@ -5,6 +5,7 @@
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doldán Lössl: cerveza artesanal hecha en casa, con paciencia y oficio. Stout, IPA Argenta y Kölsch. Conocé nuestra historia y hacé tu pedido.">
     <meta name="robots" content="index, follow">
     <!-- TITULO -->
     <title>Doldán Lössl - Cerveza</title>
@@ -41,7 +42,7 @@
             </div>
         </section>
         <section id="historia" class="historia-seccion">
-            <div class="hist-contenedor">
+            <div class="hist-contenedor" data-aos="fade-right">
                 <h2 class="tit-hist">Nuestra Historia</h2>
                 <p class="frase-hist">"Empecé cocinando cerveza para mí, en casa. Nunca pensé que un día la ibas a poder
                     tomar vos."</p>
@@ -56,6 +57,11 @@
                     pasión y en una forma de vida. Elaboramos de manera artesanal, respetando los tiempos y utilizando
                     únicamente ingredientes naturales, sin agregados industrializados, para transmitir en cada cerveza
                     la esencia de la Patagonia argentina.</p>
+            </div>
+            <p class="signo">✦</p>
+            <div class="imagenes-historia" data-aos="fade-left">
+                <img src="assets/fabrica.webp" alt="Foto en la fabrica" class="img-his">
+                <img src="assets/premio.webp" alt="Foto con la medalla" class="img-his">
             </div>
         </section>
 
@@ -96,16 +102,37 @@
                     </div>
                     <img src="assets/kolsh-cerv.webp" alt="Cerveza Kölsh" class="cerveza-img">
                 </div>
-
             </div>
         </section>
+        <section id="galeria" class="galeria-seccion">
+            <h2 class="tit-variedades">Galeria</h2>
+            <div class="marquee-cont">
 
-        <section id="galeria" class="galeria-seccion">...</section>
-        <section id="contacto" class="contacto-seccion">...</section>
+                <div class="marquee marquee-arriba">
+                    <img src="assets/cerv1.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv2.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv3.webp" alt="Foto de cerveza" class="cerv-img">
+                    <!-- Segunda tanda -->
+                    <img src="assets/cerv1.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv2.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv3.webp" alt="Foto de cerveza" class="cerv-img">
+                </div>
+
+                <div class="marquee marquee-abajo">
+                    <img src="assets/cerv4.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv5.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv6.webp" alt="Foto de cerveza" class="cerv-img">
+                    <!-- Segunda tanda -->
+                    <img src="assets/cerv4.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv5.webp" alt="Foto de cerveza" class="cerv-img">
+                    <img src="assets/cerv6.webp" alt="Foto de cerveza" class="cerv-img">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="footer-contenedor">
+        <div class="footer-contenedor" id="contacto">
             <div class="nombre-footer">
                 <h2 class="tit-footer">Doldán Lössl</h3>
                     <p>Cerveza artesanal, hecha en casa con paciencia y oficio.</p>
@@ -121,8 +148,14 @@
             </div>
             <div class="redes">
                 <h3 class="tit-footer color-amarillo">Contactos</h3>
-                <a href="#" target="_blank" class="redsocial">Whatsapp</a>
-                <a href="#" target="_blank" class="redsocial">Gmail</a>
+                <div class="caja-link">
+                    <img src="assets/icon-ws.png" alt="Logo Whatsapp" class="icon icon-ws">
+                    <p class="redsocial">+ 54 9 294 453-7818</p>
+                </div>
+                <div class="caja-link">
+                    <img src="assets/icon-gm.png" alt="Logo Gmail" class="icon icon-gm">
+                    <p class="redsocial">amadeodoldanlossl@gmail.com</p>
+                </div>
             </div>
         </div>
         <p>© 2026 Doldán Lössl — cerveza artesanal casera.</p>
